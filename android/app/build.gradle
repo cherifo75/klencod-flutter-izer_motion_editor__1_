@@ -1,0 +1,16 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.example.izer_motion_editor"
+    compileSdk flutter.compileSdkVersion
+    defaultConfig { applicationId "com.example.izer_motion_editor"; minSdk 24; targetSdk flutter.targetSdkVersion; versionCode flutter.versionCode; versionName flutter.versionName }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    kotlinOptions { jvmTarget = "17" }
+    buildTypes { release { signingConfig signingConfigs.debug; minifyEnabled false; shrinkResources false } }
+}
+
+flutter { source "../.." }

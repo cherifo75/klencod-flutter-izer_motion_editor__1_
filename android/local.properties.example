@@ -1,0 +1,3 @@
+# Flutter normally creates android/local.properties automatically.
+# If Klencode asks for it, set flutter.sdk to the Flutter SDK path.
+# flutter.sdk=/path/to/flutter

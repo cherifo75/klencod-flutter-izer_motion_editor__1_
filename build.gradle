@@ -1,0 +1,4 @@
+allprojects { repositories { google(); mavenCentral() } }
+rootProject.buildDir = file("build")
+project(":app").buildDir = file("build/app")
+tasks.register("clean", Delete) { delete rootProject.buildDir }
